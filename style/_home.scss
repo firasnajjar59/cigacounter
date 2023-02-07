@@ -1,0 +1,176 @@
+* {
+  font-family: "Lilita One", cursive;
+  font-size: 1.6rem;
+  //   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+body {
+  // background: rgb(200,139,139);
+  // background: radial-gradient(circle, rgba(200,139,139,1) 0%, rgba(18,33,50,1) 100%);
+  // background-repeat: no-repeat;
+  background-color: #0f0f0f;
+  min-height: 100vh;
+
+  .container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    header {
+      .ciga-logo {
+        width: 10rem;
+      }
+    }
+    .btn-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      .count-btn {
+        width: 48%;
+        display: flex;
+        justify-content: center;
+      }
+      .clr-btn {
+        width: 48%;
+        display: flex;
+        justify-content: center;
+      }
+      button {
+        width: 100%;
+        border-radius: 1em;
+        transition: all 50ms ease-in-out;
+        background-color: #303030;
+        color: #aaa;
+        &:active {
+          transform: translate(3px, 3px);
+        }
+      }
+    }
+    .counter-wrapper {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      gap: 0.3em;
+      
+      .info-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0.3em;
+        width: 100%;
+        box-sizing: border-box;
+        button {
+          width: 20%;
+          border-radius: 1em;
+          transition: all 50ms ease-in-out;
+          background-color: #303030;
+          color: #aaa;
+          &:active {
+            transform: translate(3px, 3px);
+          }
+        }
+      }
+        .number {
+          border-radius: 1em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30%;
+          background-color: #303030;
+          color: white;
+          font-size: 2rem;
+        }
+        .time {
+          border-radius: 1em;
+          background-color: #303030;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50%;
+          color: white;
+          font-size: 2rem;
+        }
+      }
+    }
+    .hidden {
+      display: none;
+    }
+    .overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.453);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .popup {
+        background-color: #0f0f0f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 40vh;
+        padding: 0 0.8em;
+        .popupH3 {
+          color: white;
+        }
+        .popup-btn-wrapper {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+          button {
+            width: 45%;
+            min-height: 2em;
+            border-radius: 1em;
+            transition: all 50ms ease-in-out;
+            background-color: #303030;
+            color: #aaa;
+            transition: all 50ms ease-in-out;
+            color: white;
+            &:active {
+              transform: translate(3px, 3px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+@media screen and (max-width: 950px) {
+  * {
+    font-size: 1.5rem;
+  }
+  body {
+    .container {
+      max-width: 900px;
+      header {
+        .ciga-logo {
+          width: 7rem;
+        }
+      }
+      .btn-wrapper {
+        button {
+          padding: 0.5rem 0.8rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 1.5rem;
+  }
+  body {
+    .container {
+      max-width: 400px;
+    }
+  }
+}

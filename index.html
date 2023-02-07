@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>counter | ciga</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/site.webmanifest" />
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="msapplication-config" content="./img/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./img/ciga.png" alt="" class="ciga-logo" />
+      </header>
+      <div class="btn-wrapper">
+        <div class="count-btn">
+          <button onclick="oneCiga()" class="count">I smoked</button>
+        </div>
+        <div class="clr-btn">
+          <button class="clr" onclick="hiddenchange()">clear</button>
+        </div>
+      </div>
+      <div class="counter-wrapper" id="counter-wrapper"></div>
+      <div class="hidden" id="overlay">
+        <div class="popup" id="popup">
+          <div class="popupH3">are yo sure you want to clear</div>
+          <div class="popup-btn-wrapper">
+            <button onclick="clrFunction()" class="btn" id="yes">yes</button>
+            <button onclick="overlaychange()" class="btn" id="no">no</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
